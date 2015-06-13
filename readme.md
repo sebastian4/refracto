@@ -141,11 +141,11 @@ to change mvn output, with lots of verbose rfro logs:
 - fliglet
 - asciitable
 
-** however any other npm library can be included **
+**However any other npm library can be included**
 
 ## caveats
 
-** because how the project is made there are some problems with the project **
-
+- **The project is very young so it needs some code cleanup and there are probably bugs not found yet***
+- **Because how the project is made there are some problems with the project**
 - matching with ^ or $ (end or beginning of line) may or may not work only once, it works at least once
 - string manipulation and replacement, try to match as close as possible to the match, using the javascript regex rules, if something is not working you can use the debug and the verbose help
