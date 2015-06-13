@@ -15,6 +15,13 @@
   ],
   "author": "Sebastian Lopez",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastian4/refracto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastian4/refracto/issues"
+  },
   "dependencies": {
     "asciitable": "0.0.7",
     "chalk": "^1.0.0",
