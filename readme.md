@@ -11,54 +11,69 @@ refracto
 
 ![](imgs/refracted-ls.png)
 
+## description
+
+The project gets the pipe output from any command and processes the output before going on the screen, line by line. It uses configuration files to tell what keyword configuration file to use with what type of command. The most important configuration is the main.json file which has the keywords and corresponding json files. The other json files are the actual output descriptions and rules for any command output refraction. Plugins, other js files can also be included and they can have npm third party dependencies. These js (javascript) files are written in the node format, and if they have a start or finish function they will be called before and after the output starts, as shown in the ls.json and ls-plugin.js
+
 ## installation
 
 you need to have nodejs and npm installed
 
-  npm install -g refracto
+```
+npm install -g refracto
+```
 
 ## setup
 
 to make the project's user folder:
-
-  rfro init
+```
+rfro init
+```
 
 to install libraries if using plugins:
-
-  cd ~/.rfro
-  npm insall
+```
+cd ~/.rfro
+npm insall
+```
 
 ## usage
 
 to change mvn output:
-
-  <mvn command> | rfro mvn
+```
+<mvn command> | rfro mvn
+```
 
 to change ls output:
-
-  <ls command> | rfro ls
+```
+<ls command> | rfro ls
+```
 
 to reset the project's user folder to default state:
-
-  rfro reset
+```
+rfro reset
+```
 
 help:
-
-  rfro help
+```
+rfro help
+```
 
 to change mvn output, with some rfro log debug help:
-
-  <mvn command> | rfro mvn debug
+```
+<mvn command> | rfro mvn debug
+```
 
 to change mvn output, with lots of verbose rfro logs:
-
-    <mvn command> | rfro mvn debug
+```
+<mvn command> | rfro mvn debug
+```
 
 ## rfro user folder
+```
+~/.rfro
+```
 
-  ~/.rfro
-
-### Structure:
+### rfro folder tructure:
 
 - ~/.rfro
   - main.json
@@ -67,20 +82,21 @@ to change mvn output, with lots of verbose rfro logs:
 
 ## javascript regex references
 
-- [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-- [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- [link](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+- [Mozilla 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+- [Mozilla 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [W3 Schools](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 
 ## sample main.json
-
+```
   {
     "mvn": [ "mvn.json" ],
     "ls": [ "ls.json", "common.json" ],
     "confeg1": [ "config-eg1.json" ]
   }
+```
 
 ## sample config json
-
+```
   {
     "lines" : [
       { "match": "^d.*\\.$", "decoration": "chalk.grey" },
@@ -94,9 +110,10 @@ to change mvn output, with lots of verbose rfro logs:
       "plugeg1": "plugin-eg1.js"
     }
   }
+```
 
 ## sample plugin js
-
+```
   var moment = require("moment");
   module.exports = {
     iii: 0,
@@ -114,6 +131,7 @@ to change mvn output, with lots of verbose rfro logs:
       console.log('total rest = '+this.iii);
     }
   };
+```
 
 ## libraries available for plugins
 
