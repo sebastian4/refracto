@@ -13,7 +13,7 @@ refracto
 
 ## description
 
-The project gets the pipe output from any command and processes the output before going on the screen, line by line. It uses configuration files to tell what keyword configuration file to use with what type of command. The most important configuration is the main.json file which has the keywords and corresponding json files. The other json files are the actual output descriptions and rules for any command output refraction. Plugins, other js files can also be included and they can have npm third party dependencies. These js (javascript) files are written in the node format, and if they have a start or finish function they will be called before and after the output starts, as shown in the ls.json and ls-plugin.js
+The project gets the pipe output from any command and processes the output before going on the screen, line by line. It uses configuration files to tell what keyword configuration file to use with what type of command. The most important configuration is the main.json file which has the keywords and corresponding json files. The other json files are the actual output descriptions and rules for any command output refraction. The project uses the [chalk](https://www.npmjs.com/package/chalk) project for coloring any string match. Plugins, other js files can also be included and they can have npm third party dependencies. These js (javascript) files are written in the node format, and if they have a start or finish function they will be called before and after the output starts, as shown in the ls.json and ls-plugin.js examples.
 
 ## installation
 
@@ -77,8 +77,8 @@ to change mvn output, with lots of verbose rfro logs:
 
 - ~/.rfro
   - main.json
-  - <other configs>.json
-  - <other plugins>.js
+  - any-config.json
+  - any-plugin.js
 
 ## javascript regex references
 
@@ -141,11 +141,11 @@ to change mvn output, with lots of verbose rfro logs:
 - fliglet
 - asciitable
 
-**However any other npm library can be included**
+**Because they are included in the original .rfro/package.json; however any other npm library can be included**
 
 ## caveats
 
-- **The project is very young so it needs some code cleanup and there are probably bugs not found yet***
+- **The project is very young so it needs some code cleanup and there are probably bugs not found yet**
 - **Because how the project is made there are some problems with the project**
 - matching with ^ or $ (end or beginning of line) may or may not work only once, it works at least once
 - string manipulation and replacement, try to match as close as possible to the match, using the javascript regex rules, if something is not working you can use the debug and the verbose help

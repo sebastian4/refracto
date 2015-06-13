@@ -7,10 +7,10 @@ var readline = require('readline');
 // libraries plugins can use
 
 var chalk = require('chalk');
-var moment = require('moment');
-var figlet = require('figlet');
-var asciitable = require('asciitable');
-var _ = require('underscore');
+// var moment = require('moment');
+// var figlet = require('figlet');
+// var asciitable = require('asciitable');
+// var _ = require('underscore');
 
 //
 
