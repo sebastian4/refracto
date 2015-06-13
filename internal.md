@@ -40,8 +40,6 @@ http://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
 ## todos after
 
-- make sure the command works well
-- make sure library system works well with command
 - once its ok, put it on github
 - add snapshots using curl-b style
 - publish it on npm

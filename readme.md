@@ -1,7 +1,15 @@
 refracto
 ========
 
-### refracto : refract your outputs!
+## refracto : refract your outputs!
+
+## from this
+
+![](imgs/original-ls.png)
+
+## to this
+
+![](imgs/refracted-ls.png)
 
 ## installation
 
@@ -115,9 +123,11 @@ to change mvn output, with lots of verbose rfro logs:
 - fliglet
 - asciitable
 
+** however any other npm library can be included **
+
 ## caveats
 
-** because how the project is made there are some problems with the code **
+** because how the project is made there are some problems with the project **
 
 - matching with ^ or $ (end or beginning of line) may or may not work only once, it works at least once
 - string manipulation and replacement, try to match as close as possible to the match, using the javascript regex rules, if something is not working you can use the debug and the verbose help
