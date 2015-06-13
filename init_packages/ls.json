@@ -1,0 +1,17 @@
+{
+  "lines" : [
+    { "match": "^d.*\\.$", "decoration": "chalk.grey" },
+    { "match": "^d", "decoration": "chalk.bold" }
+  ],
+  "blocks" : [
+    { "match": "\\w*\\.json", "decoration": "plugins.lsplugin.addjson" },
+    { "match": "\\w*\\.json", "decoration": "chalk.green" },
+    { "match": "\\w*\\.txt", "decoration": "plugins.lsplugin.addtext" },
+    { "match": "\\w*\\.txt", "decoration": "chalk.green" },
+    { "match": "(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d+\\s+\\d+(:\\d+)?", "decoration": "plugins.lsplugin.changedate" },
+    { "match": "(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d+\\s+\\d+(:\\d+)?", "decoration": "chalk.yellow" }
+  ],
+  "plugins" : {
+    "lsplugin": "ls-plugin.js"
+  }
+}

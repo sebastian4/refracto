@@ -1,0 +1,8 @@
+{
+  "blocks" : [
+    { "match": "est", "g": true, "decoration": "chalk.bold" },
+    { "match": "aop", "g": true, "decoration": "chalk.blue.bold" },
+    { "match": "\\[ERROR\\]", "decoration": "chalk.red.bold" },
+    { "match": "\\[WARNING\\]", "decoration": "chalk.yellow.bold" }
+  ]
+}

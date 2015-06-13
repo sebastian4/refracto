@@ -1,0 +1,17 @@
+{
+  "lines" : [
+    { "match": "copy", "decoration": "chalk.grey" }
+  ],
+  "blocks" : [
+    { "match": "install", "decoration": "chalk.underline" },
+    { "match": "domain", "decoration": "chalk.bold" },
+    { "match": "domain", "decoration": "plugins.plugeg3.xxx" },
+    { "match": "test", "decoration": "chalk.underline" },
+    { "match": "spring", "decoration": "plugins.plugeg2.func1" },
+    { "match": "plugin", "decoration": "plugins.plugeg3.xxx" }
+  ],
+  "plugins" : {
+    "plugeg2": "plugin-eg2.js",
+    "plugeg3": "plugin-eg3.js"
+  }
+}

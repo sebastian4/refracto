@@ -1,0 +1,7 @@
+{
+	"mvn": [ "mvn.json" ],
+	"ls": [ "ls.json" ],
+	"confeg1": [ "config-eg1.json", "mix1.json" ],
+	"confeg2": [ "config-eg2.json" ],
+	"confeg3": [ "config-eg3.json" ]
+}

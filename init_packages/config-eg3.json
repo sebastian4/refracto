@@ -1,0 +1,9 @@
+{
+  "blocks" : [
+    { "match": "install", "decoration": "chalk.bold" },
+    { "match": "install", "decoration": "chalk.underline" },
+    { "match": "\\d+\\.\\d+\\.\\d+\\.\\d+", "decoration": "chalk.cyan" },
+    { "match": "inet", "decoration": "chalk.bold" },
+    { "match": "inet", "decoration": "common.uppercased" }
+  ]
+}

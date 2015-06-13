@@ -1,0 +1,21 @@
+{
+  "lines" : [
+    { "match": "Tests run:", "decoration": "chalk.green" },
+    { "match": "Downloading", "decoration": "chalk.gray" },
+    { "match": "Installing", "decoration": "chalk.cyan" },
+    { "match": "Scanning", "decoration": "chalk.cyan" },
+    { "match": "Building", "decoration": "chalk.cyan" },
+    { "match": "Deleting", "decoration": "chalk.magenta" },
+    { "match": "error", "i": true, "decoration": "chalk.red" },
+    { "match": "exception", "i": true, "decoration": "chalk.red" }
+  ],
+  "blocks" : [
+    { "match": "duplicate", "decoration": "chalk.bold" },
+    { "match": "offline\\smode", "decoration": "chalk.bold" },
+    { "match": "SUCCESS", "decoration": "chalk.green.bold" },
+    { "match": "FAILURE", "decoration": "chalk.red.bold" },
+    { "match": "\\[INFO\\]", "decoration": "chalk.blue.bold" },
+    { "match": "\\[ERROR\\]", "decoration": "chalk.red.bold" },
+    { "match": "\\[WARNING\\]", "decoration": "chalk.yellow.bold" }
+  ]
+}

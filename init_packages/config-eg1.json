@@ -1,0 +1,17 @@
+{
+  "lines" : [
+    { "match": "test", "decoration": "chalk.red" },
+    { "match": "throw", "i": true, "decoration": "chalk.red" }
+  ],
+  "blocks" : [
+    { "match": "install", "decoration": "chalk.bold" },
+    { "match": "domain", "decoration": "common.uppercased" },
+    { "match": "mvc", "decoration": "common.uppercased" },
+    { "match": "resource", "decoration": "common.capitalized" },
+    { "match": "pom", "decoration": "plugins.plugeg1.func1" },
+    { "match": "rest", "decoration": "plugins.plugeg1.func2" }
+  ],
+  "plugins" : {
+    "plugeg1": "plugin-eg1.js"
+  }
+}
