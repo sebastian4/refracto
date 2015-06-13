@@ -5,7 +5,20 @@ refracto
 
 ## installation
 
+you need to have nodejs and npm installed
+
   npm install -g refracto
+
+## setup
+
+to make the project's user folder:
+
+  rfro init
+
+to install libraries if using plugins:
+
+  cd ~/.rfro
+  npm insall
 
 ## usage
 
@@ -17,11 +30,7 @@ to change ls output:
 
   <ls command> | rfro ls
 
-to make the project's user folder:
-
-  rfro init
-
-to reset the project's user folder:
+to reset the project's user folder to default state:
 
   rfro reset
 
@@ -106,10 +115,9 @@ to change mvn output, with lots of verbose rfro logs:
 - fliglet
 - asciitable
 
-## warnings
+## caveats
 
-** a few things are not working correctly **
+** because how the project is made there are some problems with the code **
 
-- string manipulation and replacement, end or beginning of string works only once
-- string manipulation and replacement, gives some problems and some matches match more than they should
-- eval, need a better way to run the commands, right now using eval inside try catch
+- matching with ^ or $ (end or beginning of line) may or may not work only once, it works at least once
+- string manipulation and replacement, try to match as close as possible to the match, using the javascript regex rules, if something is not working you can use the debug and the verbose help

@@ -169,10 +169,13 @@ function getOneConfig(userhome, aconfigfile, common, debug) {
   for (var mcidx in config.plugins) {
 
     try {
-      fs.writeFileSync(__dirname+'/temps/'+config.plugins[mcidx], fs.readFileSync(userhome+'/.rfro/'+config.plugins[mcidx]));
+      // fs.writeFileSync(__dirname+'/temps/'+config.plugins[mcidx], fs.readFileSync(userhome+'/.rfro/'+config.plugins[mcidx]));
+      //
+      // if (debug) console.log("plugins."+mcidx+" = require('"+__dirname+'/temps/'+config.plugins[mcidx]+"')");
+      // eval("plugins."+mcidx+" = require('"+__dirname+'/temps/'+config.plugins[mcidx]+"')");
 
-      if (debug) console.log("plugins."+mcidx+" = require('"+__dirname+'/temps/'+config.plugins[mcidx]+"')");
-      eval("plugins."+mcidx+" = require('"+__dirname+'/temps/'+config.plugins[mcidx]+"')");
+      if (debug) console.log("plugins."+mcidx+" = require('"+userhome+'/.rfro/'+config.plugins[mcidx]+"')");
+      eval("plugins."+mcidx+" = require('"+userhome+'/.rfro/'+config.plugins[mcidx]+"')");
     }
     catch(err) {
       errors.log('file',err,config.plugins[mcidx]);

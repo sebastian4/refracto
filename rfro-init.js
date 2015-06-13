@@ -31,7 +31,8 @@ var getInit = function(keyword, userhome, debug) {
     'ls-plugin.js',
     'plugin-eg1.js',
     'plugin-eg2.js',
-    'plugin-eg3.js'
+    'plugin-eg3.js',
+    'package.json'
   ];
 
   if (keyword === "init") {

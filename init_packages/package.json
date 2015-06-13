@@ -1,0 +1,12 @@
+{
+  "name": "refracto-local-rfro-directory",
+  "version": "0.0.1",
+  "description": "refract any output using json configuration files",
+  "dependencies": {
+    "asciitable": "0.0.7",
+    "chalk": "^1.0.0",
+    "figlet": "^1.1.1",
+    "moment": "2.10.3",
+    "underscore": "^1.8.3"
+  }
+}

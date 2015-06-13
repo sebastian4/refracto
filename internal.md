@@ -40,10 +40,16 @@ http://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
 ## todos after
 
-- change project name to refracto, change all files too to rfro
-- change command to rfro
 - make sure the command works well
 - make sure library system works well with command
 - once its ok, put it on github
 - add snapshots using curl-b style
 - publish it on npm
+
+## warnings
+
+** a few things are not working correctly **
+
+- string manipulation and replacement, end or beginning of string works only once
+- string manipulation and replacement, gives some problems and some matches match more than they should
+- eval, need a better way to run the commands, right now using eval inside try catch
